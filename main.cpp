@@ -4,13 +4,23 @@ using namespace std;
 
 int main() {
     string genre;
-    cout << "--- TV PROGRAMME RECOMMENDATION ASSISTANT ---" << endl;
-    cout << "Please enter your preferred genre (Drama/Sports/News/Cartoon/Movie): ";
-    cin >> genre;
+    bool validInput = false;
 
-    //convert input to lowercase for easier matching
-    transform(genre.begin(), genre.end(), genre.begin(), :: tolower);
-    
+    cout << "--- TV PROGRAMME RECOMMENDATION ASSISTANT ---" << endl;
+
+    while (!validInput) {
+        cout << "Please enter your preferred genre (Drama/Sports/News/Cartoon/Movie): ";
+        cin >> genre;
+        transform(genre.begin(), genre.end(), genre.begin(), ::tolower); // convert input to lowercase for case-insensitive
+
+        if (genre == "drama" || genre == "sports" || genre == "news" ||
+            genre == "cartoon" || genre == "movie") {
+            validInput = true;
+        } else {
+            cout << "Invalid genre. Please try again." << endl;
+        }
+    }
+
     if (genre == "drama") {
         cout << "Recommended Channel: TV3" << endl;
         cout << "Programme: Gerak Khas" << endl;
@@ -36,8 +46,6 @@ int main() {
         cout << "Programme: Latest Blockbuster Movie Premiere" << endl;
         cout << "Description: On-demand access to newly released films." << endl;
     }
-    else {
-        cout << "Sorry, no recommendation found for that genre." << endl;
-    }
+
     return 0;
 }
