@@ -22,6 +22,14 @@ int main() {
         cout << "\nEnter your choice (1-5): ";
         cin >> choice;
 
+        // check if input failed (e.g. user typed letters instead of a number)
+        if (cin.fail()) {
+            cin.clear();                          // clear the error flag
+            cin.ignore(1000, '\n');               // discard the invalid input
+            cout << "Invalid input. Please enter a number." << endl;
+            continue;
+        }
+
         // check if the entered choice is within valid range
         if (choice >= 1 && choice <= 5) {
             validInput = true;
