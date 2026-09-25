@@ -3,16 +3,19 @@
 using namespace std;
 
 int main() {
+    // variable to store user's genre input and track validation status
     string genre;
     bool validInput = false;
 
     cout << "--- TV PROGRAMME RECOMMENDATION ASSISTANT ---" << endl;
 
+    // loop until user enters a valid genre 
     while (!validInput) {
         cout << "Please enter your preferred genre (Drama/Sports/News/Cartoon/Movie): ";
         cin >> genre;
         transform(genre.begin(), genre.end(), genre.begin(), ::tolower); // convert input to lowercase for case-insensitive
 
+        // check if the entered genre is valid
         if (genre == "drama" || genre == "sports" || genre == "news" ||
             genre == "cartoon" || genre == "movie") {
             validInput = true;
@@ -21,6 +24,7 @@ int main() {
         }
     }
 
+    // display recommendations based on the validated genre
     if (genre == "drama") {
         cout << "Recommended Channel: TV3" << endl;
         cout << "Programme: Gerak Khas" << endl;
