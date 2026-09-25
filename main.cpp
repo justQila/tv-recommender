@@ -2,8 +2,10 @@
 using namespace std;
 
 int main() {
+    string genre;
     cout << "--- TV PROGRAMME RECOMMENDATION ASSISTANT ---" << endl;
-    //todo :get user input
+    cout << "Please enter your preferred genre (Drama/Sports/News/Cartoon/Movie): ";
+    cin >> genre;
     //todo: process genre and recommend
     return 0;
 }
