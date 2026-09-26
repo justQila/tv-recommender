@@ -64,9 +64,9 @@ int main() {
                 cout << "Description: A beloved Malaysian animated series for children." << endl;
                 break;
             case 5:
-                cout << "\nRecommended Channel: Astro First" << endl;
+                cout << "\nRecommended Channel: TV2" << endl;
                 cout << "Programme: Latest Blockbuster Movie Premiere" << endl;
-                cout << "Description: On-demand access to newly released films." << endl;
+                cout << "Description: Weekend Blockbuster Movie Special." << endl;
                 break;
         }
 
