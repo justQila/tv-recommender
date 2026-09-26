@@ -65,8 +65,8 @@ int main() {
                 break;
             case 5:
                 cout << "\nRecommended Channel: TV2" << endl;
-                cout << "Programme: Latest Blockbuster Movie Premiere" << endl;
-                cout << "Description: Weekend Blockbuster Movie Special." << endl;
+                cout << "Programme: Weekend Blockbuster Movie Special" << endl;
+                cout << "Description: Scheduled movie broadcast on Malaysia's free-to-air TV." << endl;
                 break;
         }
 
