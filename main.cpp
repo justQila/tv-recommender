@@ -54,7 +54,7 @@ int main() {
                 cout << "Description: Live coverage of Malaysia's top football league." << endl;
                 break;
             case 3:
-                cout << "\nRecommended Channel: TV2 (RTM)" << endl;
+                cout << "\nRecommended Channel: TV1 (RTM)" << endl;
                 cout << "Programme: Berita Nasional" << endl;
                 cout << "Description: Malaysia's national news bulletin." << endl;
                 break;
